@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { Container, Form, Button, Alert } from 'react-bootstrap';
 
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 const LoginForm = () => {
     const [loginData, setLoginData] = useState({
         username: '',
@@ -19,7 +20,7 @@ const LoginForm = () => {
         e.preventDefault();
         setLoginStatus('logging-in');
         try {
-            const response = await axios.post('http://localhost:5000/api/login', loginData);
+            const response = await axios.post(`${API_BASE_URL}/api/login`, loginData);
             setLoginStatus('success');
             console.log('Login successful:', response.data.message);
             navigate('/student-list');

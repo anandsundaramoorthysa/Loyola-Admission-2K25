@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ExcelJS from 'exceljs';
 import { saveAs } from 'file-saver';
 
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 const StudentList = () => {
     const [ students, setStudents ] = useState([]);
     const [ loading, setLoading ] = useState(true);
@@ -22,7 +23,7 @@ const StudentList = () => {
             setLoading(true);
             setError(null);
             try {
-                const response = await fetch('http://localhost:5000/api/admissions');
+                const response = await fetch(`${API_BASE_URL}/api/admissions`);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${ response.status }`);
                 }

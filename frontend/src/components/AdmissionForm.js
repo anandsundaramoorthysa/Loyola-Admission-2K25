@@ -2,6 +2,8 @@ import './AdmissionFormStyles.css';
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+
 const formatDateForDisplay = (dateString) => {
     if (!dateString) return '';
     const date = new Date(dateString);
@@ -323,7 +325,7 @@ function AdmissionForm() {
         }
 
         try {
-            const response = await fetch('http://localhost:5000/api/admissions', {
+            const response = await fetch(`${API_BASE_URL}/api/admissions`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
