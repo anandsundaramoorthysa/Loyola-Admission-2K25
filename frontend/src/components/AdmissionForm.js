@@ -325,7 +325,7 @@ function AdmissionForm() {
         }
 
         try {
-            const response = await fetch(`${API_BASE_URL}/api/admissions`, {
+            const response = await fetch('https://loyola-admission-2k25.onrender.com/api/admissions', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
