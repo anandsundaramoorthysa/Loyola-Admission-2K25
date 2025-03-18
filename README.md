@@ -26,7 +26,14 @@ Ensure you have the following installed before running the project:
 
 ## Installation
 
-### 1. Running the Frontend (React Development Server)
+### 1. **Clone the Repository:**
+    Open your terminal or command prompt and navigate to the directory where you want to clone the project. Then, run the following command:
+
+    ```bash
+    git clone [https://github.com/anandsundaramoorthysa/Loyola-Admission-2K25.git](https://www.google.com/search?q=https://github.com/anandsundaramoorthysa/Loyola-Admission-2K25.git)
+    ```
+    
+### 2. Running the Frontend (React Development Server)
 
 1. Open a terminal window and navigate to the `frontend` directory:
    ```bash
@@ -47,7 +54,7 @@ Ensure you have the following installed before running the project:
 
 📌 The React app should now be running at `http://localhost:3000`.
 
-### 2. Running the Backend (Express.js Server)
+### 3. Running the Backend (Express.js Server)
 
 1. Open a new terminal window.
 2. Navigate to the `backend` directory:
