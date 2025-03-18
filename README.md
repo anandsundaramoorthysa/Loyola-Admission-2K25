@@ -30,7 +30,7 @@ Ensure you have the following installed before running the project:
 
 1. Open your terminal or command prompt and navigate to the directory where you want to clone the project. Then, run the following command:
     ```bash
-    git clone [https://github.com/anandsundaramoorthysa/Loyola-Admission-2K25.git](https://www.google.com/search?q=https://github.com/anandsundaramoorthysa/Loyola-Admission-2K25.git)
+    git clone [https://github.com/anandsundaramoorthysa/Loyola-Admission-2K25.git](https://github.com/anandsundaramoorthysa/Loyola-Admission-2K25.git)
     ```
     
 ### 2. Running the Frontend (React Development Server)
