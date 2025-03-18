@@ -13,7 +13,9 @@
 
 ## About Project
 
-Loyola Admission 2K25 is a web application designed to streamline the admission process for Loyola College of Arts & Science, Mettala. The application provides a seamless experience for students and administrators to manage the admission process efficiently. The project is built using **React.js, Express.js, PostgreSQL, and Node.js** and is hosted on **Render.com**.
+Loyola Admission 2K25 is a web application designed to streamline the admission process for Loyola College of Arts & Science, Mettala. The application provides a seamless experience for students and administrators to manage the admission process efficiently. The project is built using **React.js, Express.js, PostgreSQL, and Node.js** and is hosted on **Vercel.com & used Render.com for database**.
+
+*Note:* Even you use Supabase for it.
 
 ## Prerequisites
 
