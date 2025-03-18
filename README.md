@@ -5,7 +5,6 @@
 - [About Project](#about-project)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Use/Run the Project](#userun-the-project)
 - [Features](#features)
 - [Contribution](#contribution)
 - [License](#license)
