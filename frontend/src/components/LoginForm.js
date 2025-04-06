@@ -20,7 +20,7 @@ const LoginForm = () => {
         e.preventDefault();
         setLoginStatus('logging-in');
         try {
-            const response = await axios.post('https://loyola-admission-2k25.onrender.com/api/login', loginData);
+            const response = await axios.post('http://47.129.207.185:5000/api/login', loginData);
             setLoginStatus('success');
             console.log('Login successful:', response.data.message);
             navigate('/student-list');

@@ -23,7 +23,7 @@ const StudentList = () => {
             setLoading(true);
             setError(null);
             try {
-                const response = await fetch('https://loyola-admission-2k25.onrender.com/api/admissions');
+                const response = await fetch('http://47.129.207.185:5000/api/admissions');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${ response.status }`);
                 }

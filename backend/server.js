@@ -123,9 +123,15 @@ app.get("/api/admissions", async (req, res) => {
         res.status(500).json({ message: "Error retrieving student data" });
     }
 });
+// React frontend serving
+const path = require('path');
+app.use(express.static(path.join(__dirname, 'client')));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'client', 'index.html'));
+});
 
-// app.listen(port, () => {
-//     console.log(`Server running on http://localhost:${ port }`);
-// });
+app.listen(port, () => {
+    console.log(`Server running on http://localhost:${ port }`);
+});
 
 // ---------------------- ADMISSIONS API ENDPOINTS  ----------------------
